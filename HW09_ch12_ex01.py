@@ -12,7 +12,17 @@
 
 # Body
 def most_frequent(s):
-    ...
+    list1=[]
+    for n in range(len(s)):
+        list1.append(s[n].lower())
+    d={}
+    for chars in list1:
+        d[chars]=d.get(chars,0)
+        d[chars]+=1
+    list_return=sorted(d,key=d.__getitem__,reverse=True)
+    for items in list_return:
+        print(items)
+
 
 
 ###############################################################################

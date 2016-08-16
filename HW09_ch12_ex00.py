@@ -11,7 +11,11 @@
 #     returns their sum.
 ###############################################################################
 # Imports
-
+def sumall(*args):
+    sum=0
+    for arg in args:
+        sum+=arg
+    return sum
 # Body
 
 
